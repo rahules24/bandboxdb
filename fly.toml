@@ -1,0 +1,16 @@
+app = "bandboxdb"
+primary_region = "bom"
+
+[build]
+
+[env]
+  POSTGRES_USER = "postgres"
+  POSTGRES_PASSWORD = "yourpassword"
+  POSTGRES_DB = "bandboxdb"
+
+[http_service]
+  internal_port = 5432
+
+[mounts]
+  source = "pg_data"
+  destination = "/var/lib/postgresql/data"
