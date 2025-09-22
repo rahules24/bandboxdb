@@ -4,11 +4,10 @@ primary_region = "bom"
 [build]
 
 [env]
-  # These values will be injected as environment variables from Fly.io secrets
   POSTGRES_USER = "postgres"
-  POSTGRES_PASSWORD = "yourpassword"
   POSTGRES_DB = "bandboxdb"
+  PGDATA = "/data"
 
 [mounts]
   source = "pg_data"
-  destination = "/var/lib/postgresql/data"
+  destination = "/data"
