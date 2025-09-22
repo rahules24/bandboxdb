@@ -1,8 +1,7 @@
-FROM postgres:14
+FROM postgres:16
 
 # Set environment variables for PostgreSQL
 ENV POSTGRES_USER=postgres
-ENV POSTGRES_PASSWORD=yourpassword
 ENV POSTGRES_DB=bandboxdb
 
 # Expose the PostgreSQL port
